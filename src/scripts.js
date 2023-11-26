@@ -24,9 +24,11 @@ function handleEmail() {
     if (isValidEmail) {
         parentInput.classList.remove('border-red-500');
         errorMessage.classList.add('hidden');
+        return true;
     } else {
         parentInput.classList.add('border-red-500');
         errorMessage.classList.remove('hidden');
+        return false;
     }
 }
 
@@ -44,8 +46,24 @@ function handlePassword() {
     if (passwordInput.value.length >= 8) {
         parentInput.classList.remove('border-red-500');
         errorMessage.classList.add('hidden');
+        return true;
     } else {
         parentInput.classList.add('border-red-500');
         errorMessage.classList.remove('hidden');
+        return false;
+    }
+}
+
+function handleSubmit(event) {
+    event.preventDefault();
+
+    const isValidEmail = handleEmail();
+    const isValidPassword = handlePassword();
+
+    if (isValidEmail && isValidPassword) {
+        const emailInput = document.getElementById('email').value;
+        const passwordInput = document.getElementById('password').value;
+
+        alert(`Email: ${emailInput}\nPassword: ${passwordInput}`);
     }
 }

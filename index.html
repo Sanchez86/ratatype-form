@@ -25,9 +25,9 @@
             <span class="absolute inset-0 bg-[#FFF] rounded-lg z-10"></span>
         </button>
         <div class="flex justify-center mt-3 sm:mt-6 text-[20px]">або</div>
-        <form action="/login" method="post" class="mt-3 sm:mt-4">
+        <form action="/login" method="post" class="mt-3 sm:mt-4" onsubmit="handleSubmit(event)">
             <div class="wrap-email relative flex items-end h-[60px] sm:h-[70px] bg-[#EEF4F6] w-full border-2 border-solid border-[#1742581A] rounded-lg px-3">
-                <input oninput="validateEmail(this.value)" onblur="handleEmail()" type="text" name="email" id="email" class="h-[40px] text-[20px] bg-[#EEF4F6] w-full focus:outline-none focus:border-blue-500" />
+                <input oninput="validateEmail(this.value)" onblur="handleEmail()" type="text" name="email" id="email" class="h-[40px] text-[20px] bg-[#EEF4F6] focus:bg-[#EEF4F6] active:bg-[#EEF4F6] w-full focus:outline-none focus:border-blue-500" />
                 <label for="email" class="absolute transition-all transform -translate-y-2 text-[#174258CC] block text-[20px] h-[60px] sm:h-[70px] left-3 top-2 w-full flex items-center">
                     Ел. пошта
                 </label>
@@ -46,7 +46,7 @@
                 <a href="#" class="underline text-[#174258] text-[16px] hover:text-[#000000]">Не пам'ятаєш пароль?</a>
             </div>
 
-            <button class="relative h-[48px] sm:h-[54px] w-[100%] text-[20px] text-[#0A335C] bg-[#FFCC00] border-2 border-solid border-[#FFCC00] rounded-lg border-b-[6px] mt-4 sm:mt-5">
+            <button type="submit" class="relative h-[48px] sm:h-[54px] w-[100%] text-[20px] text-[#0A335C] bg-[#FFCC00] border-2 border-solid border-[#FFCC00] rounded-lg border-b-[6px] mt-4 sm:mt-5">
                 <span class="absolute inset-0 flex justify-center items-center z-20">
                     <span class="p-2 text-[17px] sm:text-[20px] font-bold">Увійти</span>
                 </span>

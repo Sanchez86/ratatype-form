@@ -605,12 +605,12 @@ video {
   margin-top: 0.25rem;
 }
 
-.mt-11 {
-  margin-top: 2.75rem;
-}
-
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .mt-4 {
@@ -623,10 +623,6 @@ video {
 
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.mt-3 {
-  margin-top: 0.75rem;
 }
 
 .block {
@@ -649,40 +645,20 @@ video {
   height: 40px;
 }
 
+.h-\[48px\] {
+  height: 48px;
+}
+
 .h-\[54px\] {
   height: 54px;
-}
-
-.h-\[70px\] {
-  height: 70px;
-}
-
-.h-screen {
-  height: 100vh;
 }
 
 .h-\[60px\] {
   height: 60px;
 }
 
-.h-\[44px\] {
-  height: 44px;
-}
-
-.h-\[34px\] {
-  height: 34px;
-}
-
-.h-\[45px\] {
-  height: 45px;
-}
-
-.h-\[46px\] {
-  height: 46px;
-}
-
-.h-\[48px\] {
-  height: 48px;
+.h-screen {
+  height: 100vh;
 }
 
 .w-\[100\%\] {
@@ -786,6 +762,10 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#EEF4F6\!important\] {
+  background-color: #EEF4F6 !important;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -803,20 +783,16 @@ video {
   font-size: 16px;
 }
 
+.text-\[17px\] {
+  font-size: 17px;
+}
+
 .text-\[20px\] {
   font-size: 20px;
 }
 
-.text-\[64px\] {
-  font-size: 64px;
-}
-
 .text-\[48px\] {
   font-size: 48px;
-}
-
-.text-\[17px\] {
-  font-size: 17px;
 }
 
 .font-bold {
@@ -873,9 +849,19 @@ input:focus + label{
   border-color: rgb(59 130 246 / var(--tw-border-opacity));
 }
 
+.focus\:bg-\[\#EEF4F6\]:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 244 246 / var(--tw-bg-opacity));
+}
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.active\:bg-\[\#EEF4F6\]:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 244 246 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 640px) {
@@ -883,8 +869,8 @@ input:focus + label{
     margin-top: 2.75rem;
   }
 
-  .sm\:mt-6 {
-    margin-top: 1.5rem;
+  .sm\:mt-2 {
+    margin-top: 0.5rem;
   }
 
   .sm\:mt-4 {
@@ -895,41 +881,23 @@ input:focus + label{
     margin-top: 1.25rem;
   }
 
-  .sm\:mt-2 {
-    margin-top: 0.5rem;
-  }
-
-  .sm\:h-\[60px\] {
-    height: 60px;
-  }
-
-  .sm\:h-\[50px\] {
-    height: 50px;
-  }
-
-  .sm\:h-\[70px\] {
-    height: 70px;
+  .sm\:mt-6 {
+    margin-top: 1.5rem;
   }
 
   .sm\:h-\[54px\] {
     height: 54px;
   }
 
-  .sm\:text-\[64px\] {
-    font-size: 64px;
+  .sm\:h-\[70px\] {
+    height: 70px;
   }
 
   .sm\:text-\[20px\] {
     font-size: 20px;
   }
-}
 
-@media (min-width: 768px) {
-  .md\:mt-11 {
-    margin-top: 2.75rem;
-  }
-
-  .md\:text-\[64px\] {
+  .sm\:text-\[64px\] {
     font-size: 64px;
   }
 }
