@@ -1,0 +1,6 @@
+diff --git a/public/scripts.js b/scripts.js
+rename from public/scripts.js
+rename to scripts.js
+diff --git a/public/main.css b/main.css
+rename from public/main.css
+rename to main.css

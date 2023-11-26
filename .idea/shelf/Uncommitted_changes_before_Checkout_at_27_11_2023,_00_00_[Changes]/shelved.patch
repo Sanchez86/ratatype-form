@@ -1,0 +1,6 @@
+diff --git a/public/styles.css b/styles.css
+rename from public/styles.css
+rename to styles.css
+diff --git a/public/index.html b/index.html
+rename from public/index.html
+rename to index.html
